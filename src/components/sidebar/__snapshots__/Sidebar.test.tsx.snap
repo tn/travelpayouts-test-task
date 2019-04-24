@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Sidebar should be rendered 1`] = `
+<aside
+  className="sidebar"
+>
+  <a
+    href="/"
+  >
+    <span
+      className="logo"
+    />
+  </a>
+  <nav
+    className="nav"
+  >
+    <ul
+      className="nav__list"
+    >
+      <li
+        className="nav__item"
+      >
+        <a
+          className="nav__link "
+          href="#"
+        />
+      </li>
+      <li
+        className="nav__item"
+      >
+        <a
+          className="nav__link "
+          href="#"
+        />
+      </li>
+      <li
+        className="nav__item"
+      >
+        <a
+          className="nav__link "
+          href="#"
+        />
+      </li>
+      <li
+        className="nav__item"
+      >
+        <a
+          className="nav__link "
+          href="#"
+        />
+      </li>
+      <li
+        className="nav__item"
+      >
+        <a
+          className="nav__link "
+          href="#"
+        />
+      </li>
+      <li
+        className="nav__item"
+      >
+        <a
+          className="nav__link "
+          href="#"
+        />
+      </li>
+      <li
+        className="nav__item"
+      >
+        <a
+          className="nav__link nav__link--active"
+          href="#"
+        />
+      </li>
+      <li
+        className="nav__item"
+      >
+        <a
+          className="nav__link "
+          href="#"
+        />
+      </li>
+    </ul>
+  </nav>
+</aside>
+`;

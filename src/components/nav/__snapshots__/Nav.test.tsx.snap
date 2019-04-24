@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Nav should be rendered 1`] = `
+<nav
+  className="nav"
+>
+  <ul
+    className="nav__list"
+  >
+    <li
+      className="nav__item"
+    >
+      <a
+        className="nav__link "
+        href="#"
+      />
+    </li>
+    <li
+      className="nav__item"
+    >
+      <a
+        className="nav__link "
+        href="#"
+      />
+    </li>
+    <li
+      className="nav__item"
+    >
+      <a
+        className="nav__link "
+        href="#"
+      />
+    </li>
+    <li
+      className="nav__item"
+    >
+      <a
+        className="nav__link "
+        href="#"
+      />
+    </li>
+    <li
+      className="nav__item"
+    >
+      <a
+        className="nav__link "
+        href="#"
+      />
+    </li>
+    <li
+      className="nav__item"
+    >
+      <a
+        className="nav__link "
+        href="#"
+      />
+    </li>
+    <li
+      className="nav__item"
+    >
+      <a
+        className="nav__link nav__link--active"
+        href="#"
+      />
+    </li>
+    <li
+      className="nav__item"
+    >
+      <a
+        className="nav__link "
+        href="#"
+      />
+    </li>
+  </ul>
+</nav>
+`;

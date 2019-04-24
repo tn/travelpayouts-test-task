@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Search should be rendered 1`] = `
+<form
+  autoComplete="off"
+  className="search"
+  onReset={[Function]}
+>
+  <label
+    className="field__label"
+    htmlFor="search"
+  >
+    Фильтр
+  </label>
+  <input
+    autoComplete="off"
+    className="field"
+    id="search"
+    onChange={[Function]}
+  />
+  <input
+    className="button "
+    type="reset"
+  />
+</form>
+`;

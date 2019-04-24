@@ -25,6 +25,8 @@ const Dashboard: React.SFC = () => {
       try {
         const res = await axios(`http://localhost:3000/bonuses?title_like=${query}`)
 
+        console.log(res)
+
         setLoading(false)
         setBonuses(res.data)
       } catch (err) {

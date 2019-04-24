@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card should be rendered 1`] = `
+<div
+  className="card"
+>
+  <div
+    className="card__info"
+  >
+    <h3
+      className="card__title"
+    >
+      <a
+        className="card__link"
+        href="http://example.com"
+        rel="noopener nofollow"
+        target="_blank"
+      >
+        Some title
+      </a>
+    </h3>
+    <div
+      className="card__desc"
+    >
+      Description
+    </div>
+  </div>
+  <div
+    className="card__action"
+  >
+    <label
+      className="field__label"
+      htmlFor="promocode"
+    >
+      Промокод 
+      
+    </label>
+    <input
+      className="field"
+      id="promocode"
+      readOnly={true}
+      value="travelpayouts"
+    />
+    <button
+      className="card__copy"
+      onClick={[Function]}
+    >
+      Copy
+    </button>
+  </div>
+  <button
+    className="button button--primary"
+  >
+    Получить бонус
+  </button>
+</div>
+`;
