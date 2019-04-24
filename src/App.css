@@ -1,0 +1,13 @@
+@import './Config.css';
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: var(--textColor);
+    font-family: var(--baseFontFamily);
+    font-size: var(--baseFontSize);
+    background-color: var(--bgColor);
+}

@@ -1,0 +1,11 @@
+@import '../../Config.css';
+
+.footer {
+    height: var(--footerHeight);
+    line-height: var(--footerHeight);
+    margin: 0 32px 0 29px;
+    text-align: right;
+    font-size: 13px;
+    color: var(--footerColor);
+    border-top: 1px solid var(--footerBorder);
+}

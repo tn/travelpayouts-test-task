@@ -1,0 +1,15 @@
+@import '../../Config.css';
+
+.dashboard {
+    padding: 40px 32px;
+    overflow-y: auto;
+    max-height: calc(100vh - var(--headerHeight) - var(--footerHeight));
+}
+
+.dashboard__title {
+    margin: 0 0 40px;
+    font-family: var(--secondaryFontFamily);
+    font-size: 39px;
+    font-weight: 300;
+    line-height: 46px;
+}

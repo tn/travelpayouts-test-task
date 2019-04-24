@@ -1,0 +1,9 @@
+.layout {
+    display: grid;
+    grid-template-columns: 80px auto;
+    grid-template-rows: 80px;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    justify-items: stretch;
+    align-items: stretch;
+}

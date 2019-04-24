@@ -1,0 +1,28 @@
+@import '../../Config.css';
+
+.header {
+  display: flex;
+  flex-flow: row;
+  width: 100%;
+  height: var(--headerHeight);
+  padding: 18px 32px 16px;
+  background-color: var(--headerBgColor);
+}
+
+.header__detail {
+  margin-right: 23px;
+  white-space: nowrap;
+}
+
+.header__detail__label {
+    display: block;
+    font-size: 13px;
+    line-height: 19px;
+    color: var(--secondaryTextColor);
+}
+
+.header__detail__amount {
+    font-family: var(--secondaryFontFamily);
+    font-size: 19px;
+    line-height: 26px;
+}

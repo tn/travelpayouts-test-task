@@ -1,0 +1,32 @@
+@import '../../Config.css';
+
+.button {
+  display: inline-block;
+  margin: 0;
+  padding: 10px 32px;
+  font-family: var(--baseFontFamily);
+  font-size: 19px;
+  line-height: 28px;
+  color: var(--defaultButtonTextColor);
+  background-color: var(--defaultButtonColor);
+  border: 1px solid var(--defaultButtonBorder);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:active {
+  background-color: var(--defaultButtonHover);
+}
+
+.button--primary {
+    padding: 12px 80px 10px;
+    color: var(--primaryButtonTextColor);
+    background-color: var(--primaryButtonColor);
+    border: 0;
+}
+
+.button--primary:hover,
+.button--primary:active {
+    background-color: var(--primaryButtonHover);
+}

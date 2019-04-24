@@ -1,0 +1,28 @@
+:root {
+    --bgColor: #F5F7FA;
+    --textColor: #262626;
+    --secondaryTextColor: #7D7D7D;
+    --baseFontSize: 15px;
+    --baseFontFamily: Roboto, sans-serif;
+    --secondaryFontFamily: Rubik, sans-serif;
+
+    --sidebarBgColor: #1B1D29;
+    --sidebarWidth: 80px;
+
+    --headerHeight: 80px;
+    --headerBgColor: #fff;
+
+    --footerHeight: 50px;
+    --footerBorder: #E9E9E9;
+    --footerColor: #a8a8a8;
+
+    --defaultButtonColor: #F5F7FA;
+    --defaultButtonHover: #fff;
+    --defaultButtonBorder: #CFD2D9;
+    --defaultButtonTextColor: #262626;
+    --primaryButtonColor: #0085FF;
+    --primaryButtonHover: #0085dd;
+    --primaryButtonTextColor: #fff;
+
+    --fieldActiveColor: #2F80ED;
+}

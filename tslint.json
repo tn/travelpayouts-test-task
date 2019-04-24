@@ -1,0 +1,13 @@
+{
+  "extends": [
+    "tslint-config-standard",
+    "tslint-react"
+  ],
+  "rules": {
+    "no-unused-variable": [true, {"ignore-pattern": "^_"}],
+    "jsx-no-multiline-js": false,
+    "quotemark": [true, "single", "jsx-single"],
+    "indent": [true, "spaces", 2],
+    "one-variable-per-declaration": false
+  }
+}

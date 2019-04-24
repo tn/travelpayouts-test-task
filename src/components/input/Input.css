@@ -1,0 +1,27 @@
+@import '../../Config.css';
+
+.field {
+    min-width: 300px;
+    height: 50px;
+    margin: 0;
+    padding: 0 17px;
+    font-family: var(--baseFontFamily);
+    font-size: 15px;
+    border: 1px solid var(--defaultButtonBorder);
+    border-radius: 4px;
+    outline: 0;
+}
+
+.field:focus {
+    border-color: var(--fieldActiveColor);
+    box-shadow: 0 0 3px var(--fieldActiveColor);
+}
+
+.field__label {
+    display: block;
+    margin: 0 0 7px;
+    font-size: 11px;
+    line-height: 16px;
+    color: var(--secondaryTextColor);
+    text-transform: uppercase;
+}
