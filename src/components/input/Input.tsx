@@ -5,6 +5,8 @@ interface IInputProps {
   labelId: string
   value?: string
   readOnly?: boolean
+  onChange?: React.ChangeEventHandler
+  autoComplete?: string
 }
 
 const Input: React.SFC<IInputProps> = ({ children, labelId, ...rest }) => (

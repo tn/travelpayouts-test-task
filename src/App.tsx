@@ -13,7 +13,7 @@ render(
     <Layout>
       <Sidebar />
       <div>
-        <Header balance={100000} invoice={20000} />
+        <Header />
         <Dashboard />
         <Footer />
       </div>
