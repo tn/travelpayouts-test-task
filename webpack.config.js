@@ -65,7 +65,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: path.resolve(__dirname, 'index.html'),
             filename: 'index.html',
-            hash: false
+            hash: process.env.NODE_ENV === 'production'
         }),
         new MiniCSSExtractPlugin({
             filename: 'bundle.css',
