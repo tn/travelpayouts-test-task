@@ -32,18 +32,21 @@ exports[`Card should be rendered 1`] = `
       className="field__label"
       htmlFor="promocode"
     >
-      Промокод 
+      Promocode
+       
       
     </label>
     <input
       className="field"
       id="promocode"
       readOnly={true}
+      type="text"
       value="travelpayouts"
     />
     <button
       className="card__copy"
       onClick={[Function]}
+      type="button"
     >
       Copy
     </button>
@@ -51,7 +54,7 @@ exports[`Card should be rendered 1`] = `
   <button
     className="button button--primary"
   >
-    Получить бонус
+    Get bonus
   </button>
 </div>
 `;

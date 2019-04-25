@@ -10,17 +10,19 @@ exports[`Search should be rendered 1`] = `
     className="field__label"
     htmlFor="search"
   >
-    Фильтр
+    Filter
   </label>
   <input
     autoComplete="off"
     className="field"
     id="search"
     onChange={[Function]}
+    type="text"
   />
   <input
     className="button "
     type="reset"
+    value="Reset"
   />
 </form>
 `;

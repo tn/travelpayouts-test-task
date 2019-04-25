@@ -1,6 +1,6 @@
 import * as React from 'react'
 import * as Adapter from 'enzyme-adapter-react-16'
-import { configure, mount, shallow } from 'enzyme'
+import { configure, shallow } from 'enzyme'
 import * as renderer from 'react-test-renderer'
 import Search from './Search'
 import Input from '../input/Input'

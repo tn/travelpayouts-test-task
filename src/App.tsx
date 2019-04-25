@@ -5,19 +5,22 @@ import Layout from './components/layout/Layout'
 import Header from './components/header/Header'
 import Dashboard from './components/dashboard/Dashboard'
 import Footer from './components/footer/Footer'
+import LangContext, { createLocalization } from './Context'
 
 import './App.css'
 
 render(
   (
-    <Layout>
-      <Sidebar />
-      <div>
-        <Header />
-        <Dashboard />
-        <Footer />
-      </div>
-    </Layout>
+    <LangContext.Provider value={createLocalization}>
+      <Layout>
+        <Sidebar />
+        <div>
+          <Header />
+          <Dashboard />
+          <Footer />
+        </div>
+      </Layout>
+    </LangContext.Provider>
   ),
-  document.getElementById('root')
+  document.getElementById('root') || document.createElement('div')
 )

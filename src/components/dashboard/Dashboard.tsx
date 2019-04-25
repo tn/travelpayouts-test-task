@@ -3,6 +3,7 @@ import './Dashboard.css'
 import Search from '../search/Search'
 import Card from '../card/Card'
 import axios from 'axios'
+import LangContext from '../../Context'
 
 interface IBonusData {
   title: string
@@ -19,13 +20,12 @@ const Dashboard: React.SFC = () => {
   const [error, setError] = React.useState<string>(null)
   const [isLoading, setLoading] = React.useState<boolean>(false)
   const [isFirstRender, setFirstRender] = React.useState<boolean>(true)
+  const l = React.useContext(LangContext)
 
   React.useEffect(() => {
     const fetchData = async () => {
       try {
         const res = await axios(`http://localhost:3000/bonuses?title_like=${query}`)
-
-        console.log(res)
 
         setLoading(false)
         setBonuses(res.data)
@@ -37,9 +37,7 @@ const Dashboard: React.SFC = () => {
     if (isFirstRender) {
       setFirstRender(false)
       fetchData()
-    }
-
-    if (!isFirstRender) {
+    } else {
       setLoading(true)
 
       if (timeout) {
@@ -57,11 +55,11 @@ const Dashboard: React.SFC = () => {
 
   return (
     <main className='dashboard'>
-      <h1 className='dashboard__title'>Сервисы</h1>
+      <h1 className='dashboard__title'>{l('services')}</h1>
       <Search onSearch={onSearch} />
       {isLoading && <div className='loader'>↻</div>}
       {error && <div className='error'>{error} 🤔</div>}
-      {bonuses.length === 0 && !error ? 'По вашему запросу ничего не найдено 😔' : null}
+      {bonuses.length === 0 && !error ? l('notFound') : null}
       {bonuses && bonuses.map((bonus: IBonusData) => (
         <Card
           key={bonus.title}

@@ -2,6 +2,7 @@ import * as React from 'react'
 import './Card.css'
 import Button from '../button/Button'
 import Input from '../input/Input'
+import LangContext from '../../Context'
 
 interface ICardProps {
   title: string
@@ -13,6 +14,7 @@ interface ICardProps {
 const Card: React.SFC<ICardProps> = (props) => {
   const inputRef = React.useRef() as any
   const [isCopied, setCopied] = React.useState(false)
+  const l = React.useContext(LangContext)
 
   const onCopy = (event: React.MouseEvent<HTMLButtonElement>) => {
     inputRef.current.focus()
@@ -38,10 +40,10 @@ const Card: React.SFC<ICardProps> = (props) => {
         <div className='card__desc'>{props.desc}</div>
       </div>
       <div className='card__action'>
-        <Input ref={inputRef} labelId='promocode' value={props.promo} readOnly={true}>Промокод {isCopied ? '(Скопировано в буфер обмена)' : ''}</Input>
-        <button className='card__copy' onClick={onCopy}>Copy</button>
+        <Input ref={inputRef} labelId='promocode' value={props.promo} type='text' readOnly={true}>{l('promocode')} {isCopied ? `(${l('copied')})` : ''}</Input>
+        <button type='button' className='card__copy' onClick={onCopy}>Copy</button>
       </div>
-      <Button primary={true}>Получить бонус</Button>
+      <Button primary={true}>{l('getBonus')}</Button>
     </div>
   )
 }

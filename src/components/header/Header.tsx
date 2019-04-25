@@ -2,6 +2,7 @@ import * as React from 'react'
 import './Header.css'
 import axios from 'axios'
 import AmountFormat from '../amount/Amount'
+import LangContext from '../../Context'
 
 interface IAmounts {
   balance: number
@@ -11,6 +12,7 @@ interface IAmounts {
 
 const Header: React.SFC = () => {
   const [amounts, setAmounts] = React.useState<IAmounts>({ balance: 0, payout: 0, currency: 'rub' })
+  const l = React.useContext(LangContext)
 
   React.useEffect(() => {
     const fetchData = async () => {
@@ -33,13 +35,13 @@ const Header: React.SFC = () => {
   return (
     <header className='header'>
       <div className='header__detail'>
-        <span className='header__detail__label'>Баланс</span>
+        <span className='header__detail__label'>{l('balance')}</span>
         <span className='header__detail__amount'>
           <AmountFormat currency={amounts.currency} amount={amounts.balance} />
         </span>
       </div>
       <div className='header__detail'>
-        <span className='header__detail__label'>К выплате</span>
+        <span className='header__detail__label'>{l('payout')}</span>
         <span className='header__detail__amount'>
           <AmountFormat currency={amounts.currency} amount={amounts.payout} />
         </span>

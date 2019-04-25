@@ -8,6 +8,7 @@ interface IInputProps {
   onChange?: React.ChangeEventHandler
   autoComplete?: string
   ref?: any
+  type: string
 }
 
 let Input: React.SFC<IInputProps> = ({ children, labelId, ...rest }, ref) => {

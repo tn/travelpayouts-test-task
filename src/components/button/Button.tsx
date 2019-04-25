@@ -5,6 +5,7 @@ interface IButtonProps {
   primary?: boolean
   component?: any
   type?: string
+  value?: string
 }
 
 const Button: React.SFC<IButtonProps> = ({ children, primary, component: Component = 'button', ...rest }) => (
