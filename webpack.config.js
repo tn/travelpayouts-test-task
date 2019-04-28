@@ -58,7 +58,8 @@ module.exports = {
         port: 9999,
         historyApiFallback: true,
         hot: true,
-        overlay: true
+        overlay: true,
+        open: true
     },
     plugins: [
         new CleanWebpackPlugin(),

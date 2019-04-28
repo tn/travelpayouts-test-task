@@ -39,3 +39,5 @@ yarn test
 npm run test:watch
 yarn test:watch
 ```
+
+Сервер с данными будет запущен по адресу `localhost:3000`, фронт по `localhost:9999`
